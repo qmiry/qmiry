@@ -33,7 +33,9 @@ Object.entries(audioConfig).forEach(([key, config]) => {
   if (config.loop) audios[key].loop = true;
 });
 
-setTimeout(() => audios.mainBg.play(), 5000);
+window.onload = function() {
+  setTimeout(() => audios.mainBg.play(), 5000);
+};
 
 const pauseAllExcept = (...exceptions) => {
   Object.entries(audios).forEach(([key, audio]) => {
