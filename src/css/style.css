@@ -1771,7 +1771,8 @@ li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 100%;
+  background-color: #000000;
 }
 
 .pulse-ring {
