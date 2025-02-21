@@ -34,7 +34,7 @@ Object.entries(audioConfig).forEach(([key, config]) => {
 });
 
 window.onload = function() {
-  setTimeout(() => audios.mainBg.play(), 2500);
+  setTimeout(() => audios.mainBg.play(), 5000);
 };
 
 const pauseAllExcept = (...exceptions) => {
